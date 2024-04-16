@@ -496,16 +496,6 @@ header .usuario-header .saudacao .email {
   padding: 5px 20px 10px 20px;
 }
 
-.ver-mais {
-  font-family: Quicksand;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21.33px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: #ED7839;
-}
-
 .ver-mais-link{
   text-decoration: none;
 }
@@ -694,4 +684,24 @@ header .usuario-header .saudacao .email {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.resumo-container{
+  position: relative;
+}
+
+.btn-show-more{
+  border: 0;
+  background-color: #FFF;
+  cursor: pointer;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21.33px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #ED7839;
+  position: absolute;
+  right: 35px;
+  bottom: 10px;
 }
