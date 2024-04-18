@@ -66,4 +66,19 @@ export class AppComponent {
       formCreateT.style.display = 'none';
      }
   }
+
+  expandAnswer(): void{
+    const commentContainer: HTMLElement | null = document.querySelector('.comments-container');
+    const userContainer: HTMLElement | null = document.querySelector('.user-container');
+    const mainContainer: HTMLElement | null = document.querySelector('.main-container');
+    const assuntoContainer: HTMLElement | null = document.querySelector('.form-create-topic');
+
+    if (commentContainer && userContainer && mainContainer){
+      commentContainer.style.display = 'block';
+      userContainer.style.height = '1870px';
+      mainContainer.style.height = '3000px';
+    }
+
+  }
+
 }

@@ -33,8 +33,9 @@ describe('checa elementos básicos', () => {
     cy.get('body').contains('Aguardando feedback dos autores');
     cy.compareSnapshot('Trabalho - Topico enviado');
   });
+
   it('expandir tópico funciona', () => {
-    cy.get('.answered-topic .ops-topic-subject').click();
+    cy.get('.answered-topic').click();
     cy.get('.comments-container').should('exist');
     cy.compareSnapshot('Trabalho - Card de topico expandido');
   });

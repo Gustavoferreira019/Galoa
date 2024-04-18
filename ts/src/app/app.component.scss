@@ -235,7 +235,7 @@ header .usuario-header .saudacao .email {
 .main-container {
   grid-column: 2;
   padding: 36px 50px 40px 50px;
-  height: 2500px;
+  height: 2240px;
 }
 
 .main-container .title-main {
@@ -633,10 +633,8 @@ header .usuario-header .saudacao .email {
   padding: 15px 25px;
   border-radius: 6px;
   position: absolute;
-  bottom: -22px;
-  left: 680px;
+  margin-left: 80px;
   cursor: pointer;
-
 }
 
 .btn-create-topic p {
@@ -656,6 +654,11 @@ header .usuario-header .saudacao .email {
 
 .comentarios-container {
   margin-top: 25px;
+  cursor: pointer;
+
+  .comments-container{
+    display: none;
+  }
 }
 
 .comentarios-container:first-of-type {
@@ -810,6 +813,9 @@ header .usuario-header .saudacao .email {
   display: flex;
   flex-direction: column;
   width: 1500px;
+  .textarea{
+    width: 1503px;
+  }
 }
 
 .conteudo-container label {
@@ -829,7 +835,8 @@ header .usuario-header .saudacao .email {
   text-align: center;
   color: #fff;
   max-width: 200px;
-  margin-left: 1300px;
+  margin-left: 1350px;
+  cursor: pointer;
 }
 
 .sub-btn {
@@ -1050,8 +1057,8 @@ textarea {
   padding: 15px 25px;
   border-radius: 6px;
   position: absolute;
-  bottom: -22px;
-  left: 680px;
+  bottom: -20px;
+  left: 580px;
   cursor: pointer;
 
   .plus-icon {
@@ -1112,7 +1119,7 @@ textarea {
     margin: 60px 0;
   }
 
-  .findOthers{
+  .findOthers {
     margin-bottom: 30px;
   }
 
@@ -1241,6 +1248,10 @@ textarea {
   }
 }
 
+.container-comment{
+  background-color: rgba(248, 248, 248, 1);
+  margin-top: 20px;
+}
 
 .comentario-usuario {
   padding: 40px;
@@ -1249,6 +1260,70 @@ textarea {
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+  margin-top: 14px;
+
+  .comentario {
+    margin-top: 20px;
+
+    .p-comentario {
+      font-family: Quicksand;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 17.5px;
+      color: rgba(77, 77, 77, 1);
+
+    }
+  }
+
+  .header-reply {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .user-name {
+      font-family: Quicksand;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 15px;
+      color: rgba(92, 92, 92, 1);
+    }
+
+    .header-author {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100px;
+
+      .class-autor {
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(237, 120, 57, 1);
+      }
+    }
+  }
+
+  .check-icon {
+    height: 25px;
+    width: 25px;
+    background-image: url('./img/check-orange.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .header-usuario {
+    .user-name {
+      font-family: Quicksand;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: left;
+      color: rgba(92, 92, 92, 1);
+    }
+  }
 }
 
 .header-usuario {
@@ -1257,7 +1332,7 @@ textarea {
   h3 {
     color: rgba(237, 120, 57, 1);
     font-family: $font-quicksand;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 20px;
   }
@@ -1265,9 +1340,10 @@ textarea {
   p {
     color: rgba(92, 92, 92, 1);
     font-family: $font-quicksand;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 15px;
+    margin-top: 10px;
   }
 }
 
@@ -1427,7 +1503,7 @@ textarea {
   text-align: center;
   color: #fff;
   max-width: 200px;
-  margin-left: 1361px;
+  margin-left: 1309px;
   border-radius: 2px;
 }
 
