@@ -9,7 +9,8 @@ describe('checa elementos básicos', () => {
   });
 
   it('botão de expandir resumo existe', () => {
-    cy.get('.btn-show-more').contains('ver mais');
+    cy.get('.btn-show-more').contains('ver mais')
+    cy.get('.btn-show-more').click();
     cy.compareSnapshot('Trabalho - Resumo expandido');
   });
 
